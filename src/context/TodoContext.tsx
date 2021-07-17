@@ -1,4 +1,5 @@
 import React, { createContext, ReactElement, useReducer } from "react";
+import { v4 } from "uuid";
 export interface Todo {
   id: string;
   label: string;
@@ -39,9 +40,31 @@ export function addTodo(todo: Todo): AddAction {
 function updateTodosInLocalStorage(todos: Todo[]) {
   window.localStorage.setItem("todos", JSON.stringify(todos));
 }
+function createDefaultTodos(): Todo[] {
+  return [
+    {
+      id: v4(),
+      active: true,
+      label: "Welcome! 👋",
+      time: 0,
+    },
+    {
+      id: v4(),
+      active: false,
+      label: "Click + to add new todo 🚀",
+      time: 0,
+    },
+    {
+      id: v4(),
+      active: true,
+      label: "Enjoy it! 😍",
+      time: 0,
+    },
+  ];
+}
 function getTodosInLocalStorage(): Todo[] {
   const todosJson = window.localStorage.getItem("todos");
-  return todosJson == null ? [] : JSON.parse(todosJson);
+  return todosJson == null ? createDefaultTodos() : JSON.parse(todosJson);
 }
 export function deleteTodo(id: string): DeleteAction {
   return {
