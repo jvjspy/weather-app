@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# ![](http://openweathermap.org/img/wn/10d@2x.png) Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Built with
+- [React](https://reactjs.org)
+- [React-Bootstrap](https://react-bootstrap.github.io)
+- [Moment](https://momentjs.com)
+- [Sass](https://sass-lang.com)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Create React App](https://create-react-app.dev/)
+## Demo
+- Deployed to [Surge](https://surge.sh/)
+- [https://weather--app.surge.sh](https://weather--app.surge.sh)
 
 ## Available Scripts
 
