@@ -1,0 +1,19 @@
+.date-time {
+  color: #fff;
+  text-shadow: $text-shadow;
+  .time {
+    span {
+      font-size: 1.2rem;
+    }
+    strong {
+      font-weight: 500;
+      font-size: 3rem;
+    }
+  }
+  .date {
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}

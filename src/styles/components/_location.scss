@@ -1,0 +1,15 @@
+.location {
+  text-shadow: $text-shadow;
+  text-align: right;
+  color: #fff;
+  .country {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .city {
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}

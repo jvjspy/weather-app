@@ -1,0 +1,26 @@
+.todo-form {
+  background: #fff;
+  border: 1px solid $gray-500;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .todo-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .todo-form-actions {
+      button {
+        font-size: 1.2rem;
+        color: $secondary;
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
+  }
+}

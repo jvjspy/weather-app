@@ -1,0 +1,58 @@
+.todo-add-btn {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  button {
+    color: #fff;
+    &:hover {
+      background: rgba($gray-500, 0.5);
+    }
+  }
+}
+.todo-list {
+  list-style: none;
+  max-height: 10rem;
+  overflow-y: auto;
+  text-shadow: $text-shadow;
+  &::-webkit-scrollbar {
+    background: none;
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-500;
+    border-radius: 500px;
+  }
+  position: relative;
+  padding: 0;
+  margin: 5px 0;
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    cursor: pointer;
+    &:hover {
+      background: rgba($gray-500, 0.5);
+    }
+    .badge {
+      width: 50px;
+    }
+    .todo-label {
+      margin-left: 1rem;
+      flex: 1;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: $gray-500;
+    left: 23px;
+    top: 0;
+    z-index: -1;
+  }
+}
